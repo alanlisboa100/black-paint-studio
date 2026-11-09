@@ -1,0 +1,248 @@
+[
+  {
+    "engine": "procedural-natural-portrait",
+    "engine_version": "2.3.0",
+    "dimensions": [
+      450,
+      600
+    ],
+    "seed": 7331,
+    "quality": "standard",
+    "background": "paper",
+    "hair_fibers": 1750,
+    "stages": [
+      "base_e_silhueta",
+      "rosto_e_volume",
+      "olhos_e_expressao",
+      "mechas_e_roupa",
+      "acabamento"
+    ],
+    "reference_pixels_used": false,
+    "pose": "front",
+    "controls": {
+      "eye_open": 1,
+      "eye_width": 1,
+      "eye_tilt": 0,
+      "iris_size": 1,
+      "pupil_size": 0.25,
+      "gaze_x": 0,
+      "gaze_y": 0,
+      "mouth_width": 1,
+      "mouth_curve": 0,
+      "mouth_open": 0,
+      "lip_fullness": 1,
+      "brow_tilt": 0,
+      "hair_shine": 1.12,
+      "hair_wave": 1.25,
+      "cloth_fold": 1.1,
+      "expression": "neutral",
+      "cloth_material": "velvet"
+    },
+    "semantic_fidelity_score": null
+  },
+  {
+    "engine": "procedural-natural-portrait",
+    "engine_version": "2.3.0",
+    "dimensions": [
+      450,
+      600
+    ],
+    "seed": 7331,
+    "quality": "standard",
+    "background": "paper",
+    "hair_fibers": 1750,
+    "stages": [
+      "base_e_silhueta",
+      "rosto_e_volume",
+      "olhos_e_expressao",
+      "mechas_e_roupa",
+      "acabamento"
+    ],
+    "reference_pixels_used": false,
+    "pose": "front",
+    "controls": {
+      "eye_open": 0.87,
+      "eye_width": 1,
+      "eye_tilt": 0,
+      "iris_size": 1,
+      "pupil_size": 0.25,
+      "gaze_x": 0,
+      "gaze_y": 0,
+      "mouth_width": 1,
+      "mouth_curve": 0.42,
+      "mouth_open": 0,
+      "lip_fullness": 1,
+      "brow_tilt": 0.08,
+      "hair_shine": 1.12,
+      "hair_wave": 1.25,
+      "cloth_fold": 1.1,
+      "expression": "soft",
+      "cloth_material": "velvet"
+    },
+    "semantic_fidelity_score": null
+  },
+  {
+    "engine": "procedural-natural-portrait",
+    "engine_version": "2.3.0",
+    "dimensions": [
+      450,
+      600
+    ],
+    "seed": 7331,
+    "quality": "standard",
+    "background": "paper",
+    "hair_fibers": 1750,
+    "stages": [
+      "base_e_silhueta",
+      "rosto_e_volume",
+      "olhos_e_expressao",
+      "mechas_e_roupa",
+      "acabamento"
+    ],
+    "reference_pixels_used": false,
+    "pose": "front",
+    "controls": {
+      "eye_open": 0.76,
+      "eye_width": 1,
+      "eye_tilt": 0,
+      "iris_size": 1,
+      "pupil_size": 0.25,
+      "gaze_x": 0,
+      "gaze_y": 0,
+      "mouth_width": 1,
+      "mouth_curve": 0.85,
+      "mouth_open": 0.18,
+      "lip_fullness": 1,
+      "brow_tilt": 0.12,
+      "hair_shine": 1.12,
+      "hair_wave": 1.25,
+      "cloth_fold": 1.1,
+      "expression": "happy",
+      "cloth_material": "velvet"
+    },
+    "semantic_fidelity_score": null
+  },
+  {
+    "engine": "procedural-natural-portrait",
+    "engine_version": "2.3.0",
+    "dimensions": [
+      450,
+      600
+    ],
+    "seed": 7331,
+    "quality": "standard",
+    "background": "paper",
+    "hair_fibers": 1750,
+    "stages": [
+      "base_e_silhueta",
+      "rosto_e_volume",
+      "olhos_e_expressao",
+      "mechas_e_roupa",
+      "acabamento"
+    ],
+    "reference_pixels_used": false,
+    "pose": "front",
+    "controls": {
+      "eye_open": 0.85,
+      "eye_width": 1,
+      "eye_tilt": 0,
+      "iris_size": 1,
+      "pupil_size": 0.25,
+      "gaze_x": 0,
+      "gaze_y": 0,
+      "mouth_width": 1,
+      "mouth_curve": -0.65,
+      "mouth_open": 0,
+      "lip_fullness": 1,
+      "brow_tilt": -0.75,
+      "hair_shine": 1.12,
+      "hair_wave": 1.25,
+      "cloth_fold": 1.1,
+      "expression": "sad",
+      "cloth_material": "velvet"
+    },
+    "semantic_fidelity_score": null
+  },
+  {
+    "engine": "procedural-natural-portrait",
+    "engine_version": "2.3.0",
+    "dimensions": [
+      450,
+      600
+    ],
+    "seed": 7331,
+    "quality": "standard",
+    "background": "paper",
+    "hair_fibers": 1750,
+    "stages": [
+      "base_e_silhueta",
+      "rosto_e_volume",
+      "olhos_e_expressao",
+      "mechas_e_roupa",
+      "acabamento"
+    ],
+    "reference_pixels_used": false,
+    "pose": "front",
+    "controls": {
+      "eye_open": 0.68,
+      "eye_width": 1,
+      "eye_tilt": 0.32,
+      "iris_size": 1,
+      "pupil_size": 0.25,
+      "gaze_x": 0,
+      "gaze_y": 0,
+      "mouth_width": 1,
+      "mouth_curve": -0.25,
+      "mouth_open": 0,
+      "lip_fullness": 1,
+      "brow_tilt": 0.9,
+      "hair_shine": 1.12,
+      "hair_wave": 1.25,
+      "cloth_fold": 1.1,
+      "expression": "angry",
+      "cloth_material": "velvet"
+    },
+    "semantic_fidelity_score": null
+  },
+  {
+    "engine": "procedural-natural-portrait",
+    "engine_version": "2.3.0",
+    "dimensions": [
+      450,
+      600
+    ],
+    "seed": 7331,
+    "quality": "standard",
+    "background": "paper",
+    "hair_fibers": 1750,
+    "stages": [
+      "base_e_silhueta",
+      "rosto_e_volume",
+      "olhos_e_expressao",
+      "mechas_e_roupa",
+      "acabamento"
+    ],
+    "reference_pixels_used": false,
+    "pose": "front",
+    "controls": {
+      "eye_open": 1.3,
+      "eye_width": 1,
+      "eye_tilt": 0,
+      "iris_size": 0.86,
+      "pupil_size": 0.25,
+      "gaze_x": 0,
+      "gaze_y": 0,
+      "mouth_width": 0.78,
+      "mouth_curve": 0,
+      "mouth_open": 0.85,
+      "lip_fullness": 1,
+      "brow_tilt": -0.15,
+      "hair_shine": 1.12,
+      "hair_wave": 1.25,
+      "cloth_fold": 1.1,
+      "expression": "surprised",
+      "cloth_material": "velvet"
+    },
+    "semantic_fidelity_score": null
+  }
+]

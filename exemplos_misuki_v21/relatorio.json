@@ -1,0 +1,23 @@
+{
+  "engine": "procedural-natural-portrait",
+  "dimensions": [
+    900,
+    1200
+  ],
+  "seed": 7331,
+  "quality": "standard",
+  "background": "paper",
+  "hair_fibers": 1750,
+  "stages": [
+    "base_e_silhueta",
+    "rosto_e_volume",
+    "olhos_e_expressao",
+    "mechas_e_roupa",
+    "acabamento"
+  ],
+  "reference_pixels_used": false,
+  "pose": "front",
+  "semantic_fidelity_score": null,
+  "reproduced_from": "Código preservado do motor 2.1.0, seed 7331, 900x1200, standard, paper",
+  "seconds_this_reproduction_linux": 2.585
+}

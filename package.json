@@ -1,0 +1,22 @@
+{
+  "name": "black-paint-studio",
+  "version": "2.3.0",
+  "description": "Termux-friendly paint editor with canvas brushes, local procedural art and PNG export",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test test/*.test.js && python3 -m unittest discover -s test -p 'test_*.py'",
+    "doctor": "python3 paint_cli.py --doctor"
+  },
+  "keywords": [
+    "paint",
+    "canvas",
+    "termux",
+    "blackcore",
+    "generative-art",
+    "matrix"
+  ],
+  "author": "Alan Lisboa & BLACKCORE",
+  "license": "MIT"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "misuki",
+  "name": "Misuki",
+  "studio": "BLACKCORE",
+  "version": "1.9.5",
+  "tagline": "Mais que uma personagem. Uma identidade.",
+  "palette": {
+    "preto": "#000000",
+    "cinzaEscuro": "#1A1A1A",
+    "cinzaMedio": "#444444",
+    "cinzaClaro": "#AAAAAA",
+    "branco": "#FFFFFF",
+    "vermelhoIris": "#8B1018",
+    "vermelhoAcento": "#C41E3A"
+  },
+  "identity": {
+    "hair": "cabelo preto longo, mechas grandes primeiro, franja irregular, volume na coroa",
+    "eyes": "olhos vermelhos alongados, iris clara no vermelho, cilios marcantes, brilho pequeno",
+    "horns": "dois chifres negros curvos saindo da caixa do crânio, textura de queratina",
+    "expression": "fria ou neutra, olhar direto",
+    "outfit": "gótico/tech: jaqueta ou vestido preto, fivelas, alças, colar, correntes, pentagrama",
+    "mood": "atmosfera sombria, cidade noturna, monochromatico com acento vermelho só nos olhos"
+  },
+  "negative": "cabelo loiro, olhos azuis, chifres coloridos, estilo chibi, fundo branco de estúdio, neon ciano, pele laranja, texto na imagem, marca d'água",
+  "poses": {
+    "front": "retrato frontal da cintura para cima, ombros abertos, olhar na câmera",
+    "three-quarter": "três quartos, queixo levemente baixo, uma mecha atravessando o ombro",
+    "profile": "perfil esquerdo, silhueta dos chifres e do nariz limpa",
+    "smile": "mesmo retrato frontal, sorriso mínimo sem mostrar dentes",
+    "full": "corpo inteiro em pé, botas plataforma, uma mão à frente"
+  },
+  "promptCore": "Anime girl named Misuki, BLACKCORE identity, long black hair with large lock masses and uneven bangs, vivid red eyes with small catchlight, two curved black horns rooted in the scalp, cold or neutral expression, gothic-tech black outfit with straps buckles chains and a small pentagram, monochrome black-and-white illustration with red only in the irises, high detail anime, dark night atmosphere",
+  "promptFinish": "sharp lineart, cinematic rim light, leather texture, hair volume, no extra characters"
+}

@@ -1,0 +1,443 @@
+{
+ "prompt": "breathtaking masterpiece semirealistic anime illustration of Misuki, a gothic demon girl named Misuki, upper-body front portrait, shoulders open, direct confident gaze into the camera, a few loose locks crossing one shoulder, extremely beautiful adult anime woman, elegant adult proportions, refined tapered jaw, soft chin, natural small delicate nose with a subtle bridge and soft nostril shading, naturally shaped small lips with a gentle cupid's bow and natural rosy vermilion gradient, no heavy lipstick, no exaggerated mouth, luminous porcelain skin with soft subsurface glow and light blush, large expressive almond eyes, glossy dark crimson-red irises with several small catchlights, defined upper eyelid crease, long lashes, naturally tapered elegant eyebrows, extremely long jet-black silky hair built from a few large flowing lock masses, three to seven major fringe locks, layered face-framing bangs that leave both eyes fully visible, hair volume at the crown, glossy individually painted strands with fine ribbon highlights, no comb-like field of parallel stripes, no roof-shaped or flat hair top, exactly two glossy black keratin horns rooted at the upper-lateral hairline, sweeping outward then curving upward, thick base tapering to sharp tips, subtle groove texture catching the rim light, elegant black gothic garment with fine lace trim, slender straps and small buckles, a choker with a tiny pentagram pendant, sparse jewel accents, dark elegant silhouette, cinematic single-direction rim light separating the black hair and horns from the background, moody dark atmospheric background with soft bokeh and low contrast behind the face, monochrome black-and-white tonal scheme with red present only in the irises, ultra detailed clean line art, smooth gradient shading, masterpiece illustration, 8k, no text, no watermark, no logo, no signature, no chibi, no childlike proportions, no blonde hair, no blue eyes, no candy-stripe hair, no extra fingers, no deformed hands, no distorted or asymmetrical face, no busy high-contrast background behind the face",
+ "aspecto": "3:4",
+ "modelos": [
+  "gemini-3-pro-image",
+  "gemini-3.1-flash-image",
+  "gemini-2.5-flash-image"
+ ],
+ "resultados": [
+  {
+   "arquivo": "misuki_linda_best_a",
+   "modelo": "gemini-3-pro-image",
+   "slot": 1,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_a",
+   "modelo": "gemini-3-pro-image",
+   "slot": 2,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_a",
+   "modelo": "gemini-3-pro-image",
+   "slot": 3,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_a",
+   "modelo": "gemini-3-pro-image",
+   "slot": 4,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_a",
+   "modelo": "gemini-3-pro-image",
+   "slot": 5,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_a",
+   "modelo": "gemini-3-pro-image",
+   "slot": 6,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_a",
+   "modelo": "gemini-3-pro-image",
+   "slot": 7,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_a",
+   "modelo": "gemini-3-pro-image",
+   "slot": 8,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_a",
+   "modelo": "gemini-3.1-flash-image",
+   "slot": 1,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_a",
+   "modelo": "gemini-3.1-flash-image",
+   "slot": 2,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_a",
+   "modelo": "gemini-3.1-flash-image",
+   "slot": 3,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_a",
+   "modelo": "gemini-3.1-flash-image",
+   "slot": 4,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_a",
+   "modelo": "gemini-3.1-flash-image",
+   "slot": 5,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_a",
+   "modelo": "gemini-3.1-flash-image",
+   "slot": 6,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_a",
+   "modelo": "gemini-3.1-flash-image",
+   "slot": 7,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_a",
+   "modelo": "gemini-3.1-flash-image",
+   "slot": 8,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_a",
+   "modelo": "gemini-2.5-flash-image",
+   "slot": 1,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_a",
+   "modelo": "gemini-2.5-flash-image",
+   "slot": 2,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_a",
+   "modelo": "gemini-2.5-flash-image",
+   "slot": 3,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_a",
+   "modelo": "gemini-2.5-flash-image",
+   "slot": 4,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_a",
+   "modelo": "gemini-2.5-flash-image",
+   "slot": 5,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_a",
+   "modelo": "gemini-2.5-flash-image",
+   "slot": 6,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_a",
+   "modelo": "gemini-2.5-flash-image",
+   "slot": 7,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_a",
+   "modelo": "gemini-2.5-flash-image",
+   "slot": 8,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_b",
+   "modelo": "gemini-3-pro-image",
+   "slot": 2,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_b",
+   "modelo": "gemini-3-pro-image",
+   "slot": 3,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_b",
+   "modelo": "gemini-3-pro-image",
+   "slot": 4,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_b",
+   "modelo": "gemini-3-pro-image",
+   "slot": 5,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_b",
+   "modelo": "gemini-3-pro-image",
+   "slot": 6,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_b",
+   "modelo": "gemini-3-pro-image",
+   "slot": 7,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_b",
+   "modelo": "gemini-3-pro-image",
+   "slot": 8,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_b",
+   "modelo": "gemini-3-pro-image",
+   "slot": 1,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_b",
+   "modelo": "gemini-3.1-flash-image",
+   "slot": 2,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_b",
+   "modelo": "gemini-3.1-flash-image",
+   "slot": 3,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_b",
+   "modelo": "gemini-3.1-flash-image",
+   "slot": 4,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_b",
+   "modelo": "gemini-3.1-flash-image",
+   "slot": 5,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_b",
+   "modelo": "gemini-3.1-flash-image",
+   "slot": 6,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_b",
+   "modelo": "gemini-3.1-flash-image",
+   "slot": 7,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_b",
+   "modelo": "gemini-3.1-flash-image",
+   "slot": 8,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_b",
+   "modelo": "gemini-3.1-flash-image",
+   "slot": 1,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_b",
+   "modelo": "gemini-2.5-flash-image",
+   "slot": 2,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_b",
+   "modelo": "gemini-2.5-flash-image",
+   "slot": 3,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_b",
+   "modelo": "gemini-2.5-flash-image",
+   "slot": 4,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_b",
+   "modelo": "gemini-2.5-flash-image",
+   "slot": 5,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_b",
+   "modelo": "gemini-2.5-flash-image",
+   "slot": 6,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_b",
+   "modelo": "gemini-2.5-flash-image",
+   "slot": 7,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_b",
+   "modelo": "gemini-2.5-flash-image",
+   "slot": 8,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_b",
+   "modelo": "gemini-2.5-flash-image",
+   "slot": 1,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_c",
+   "modelo": "gemini-3-pro-image",
+   "slot": 3,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_c",
+   "modelo": "gemini-3-pro-image",
+   "slot": 4,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_c",
+   "modelo": "gemini-3-pro-image",
+   "slot": 5,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_c",
+   "modelo": "gemini-3-pro-image",
+   "slot": 6,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_c",
+   "modelo": "gemini-3-pro-image",
+   "slot": 7,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_c",
+   "modelo": "gemini-3-pro-image",
+   "slot": 8,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_c",
+   "modelo": "gemini-3-pro-image",
+   "slot": 1,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_c",
+   "modelo": "gemini-3-pro-image",
+   "slot": 2,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_c",
+   "modelo": "gemini-3.1-flash-image",
+   "slot": 3,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_c",
+   "modelo": "gemini-3.1-flash-image",
+   "slot": 4,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_c",
+   "modelo": "gemini-3.1-flash-image",
+   "slot": 5,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_c",
+   "modelo": "gemini-3.1-flash-image",
+   "slot": 6,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_c",
+   "modelo": "gemini-3.1-flash-image",
+   "slot": 7,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_c",
+   "modelo": "gemini-3.1-flash-image",
+   "slot": 8,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_c",
+   "modelo": "gemini-3.1-flash-image",
+   "slot": 1,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_c",
+   "modelo": "gemini-3.1-flash-image",
+   "slot": 2,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_c",
+   "modelo": "gemini-2.5-flash-image",
+   "slot": 3,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_c",
+   "modelo": "gemini-2.5-flash-image",
+   "slot": 4,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_c",
+   "modelo": "gemini-2.5-flash-image",
+   "slot": 5,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_c",
+   "modelo": "gemini-2.5-flash-image",
+   "slot": 6,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_c",
+   "modelo": "gemini-2.5-flash-image",
+   "slot": 7,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_c",
+   "modelo": "gemini-2.5-flash-image",
+   "slot": 8,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_c",
+   "modelo": "gemini-2.5-flash-image",
+   "slot": 1,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "arquivo": "misuki_linda_best_c",
+   "modelo": "gemini-2.5-flash-image",
+   "slot": 2,
+   "erro": "HTTP 429 {   \"error\": {     \"code\": 429,     \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  }
+ ]
+}

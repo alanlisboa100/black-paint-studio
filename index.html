@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>🖤 BLACK PAINT STUDIO // ACADEMIA DE PINTURA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Header / Main Bar -->
+        <header class="top-bar">
+            <div class="logo-area">
+                <span class="cyber-badge">v2.3.0 TERMUX</span>
+                <h1>BLACK<span>PAINT</span> STUDIO</h1>
+            </div>
+            <div class="top-actions">
+                <input id="open-image-input" type="file" accept="image/png,image/jpeg,image/webp" hidden>
+                <button id="btn-academy" title="Abrir trilha de pintura e exercícios" aria-label="Abrir Academia de Pintura" class="btn-icon academy-icon">🎓</button>
+                <button id="btn-open-image" title="Abrir imagem para editar" class="btn-pill">📂 Abrir</button>
+                <button id="btn-zoom-out" title="Afastar" class="btn-icon">−</button>
+                <button id="btn-zoom-reset" title="Encaixar na tela" class="btn-icon">1:1</button>
+                <button id="btn-zoom-in" title="Aproximar" class="btn-icon">+</button>
+                <button id="btn-toggle-ref" title="Mostrar/ocultar referência" class="btn-icon">🖼️</button>
+                <button id="btn-gpu-finish" title="Acabamento GPU leve (um passe)" class="btn-pill">⚡ GPU leve</button>
+                <button id="btn-undo" title="Desfazer (Ctrl+Z)" class="btn-icon">↩️</button>
+                <button id="btn-redo" title="Refazer (Ctrl+Y)" class="btn-icon">↪️</button>
+                <button id="btn-clear" title="Limpar Tela" class="btn-icon danger">🗑️</button>
+                <input id="open-project-input" type="file" accept=".bpaint,.json" hidden>
+                <button id="btn-open-project" class="btn-pill">📁 Projeto</button>
+                <button id="btn-save-project" class="btn-pill">💾 Projeto</button>
+                <button id="btn-recover-project" class="btn-pill">⏪ Recuperar</button>
+                <button id="btn-save-phone" title="Salvar no Celular / Download" class="btn-pill primary">💾 Salvar PNG</button>
+            </div>
+        </header>
+
+        <!-- Main Layout: Sidebar + Canvas Workspace -->
+        <main class="workspace">
+            <!-- Left Toolbar -->
+            <aside class="sidebar tools-panel">
+                <div class="section-title">FERRAMENTAS</div>
+                <div class="tools-grid">
+                    <button class="tool-btn active" data-tool="brush" title="Pincel Normal">🖌️ Pincel</button>
+                    <button class="tool-btn" data-tool="neon" title="Pincel Neon Brilhante">✨ Neon</button>
+                    <button class="tool-btn" data-tool="matrix" title="Chuva Matrix (Glifos)">🌧️ Matrix</button>
+                    <button class="tool-btn" data-tool="particles" title="Pincel de Partículas">🌌 Partículas</button>
+                    <button class="tool-btn" data-tool="symmetry" title="Caleidoscópio 8x">🪞 Simetria</button>
+                    <button class="tool-btn" data-tool="spray" title="Spray / Aerógrafo">💨 Spray</button>
+                    <button class="tool-btn" data-tool="eraser" title="Borracha">🧽 Borracha</button>
+                    <button class="tool-btn" data-tool="fill" title="Balde de Tinta">🪣 Preencher</button>
+                    <button class="tool-btn" data-tool="eyedropper" title="Conta-gotas">🎯 Cor</button>
+                </div>
+
+                <div class="section-title">FORMAS</div>
+                <div class="tools-grid mini">
+                    <button class="tool-btn" data-tool="line" title="Linha Reta">╱ Linha</button>
+                    <button class="tool-btn" data-tool="rect" title="Retângulo">▭ Caixa</button>
+                    <button class="tool-btn" data-tool="circle" title="Círculo">◯ Círculo</button>
+                    <button class="tool-btn" data-tool="star" title="Estrela Cyber">★ Estrela</button>
+                </div>
+
+                <div class="section-title">PREDEFINIÇÕES DO PINCEL</div>
+                <div class="control-group">
+                    <select id="preset-selector" class="cyber-select">
+                        <option value="F">Preset F — Neon clean</option>
+                        <option value="D">Preset D — Gothic Pastel Fusion</option>
+                        <option value="B">Preset B — Paint Retro Interface</option>
+                        <option value="A">Preset A — Soft Sketch Base</option>
+                        <option value="C">Preset C — Soft Render Delicado</option>
+                        <option value="E">Preset E — Production Polish Light</option>
+                    </select>
+                </div>
+
+                <div class="section-title">GERADORES AUTOMÁTICOS</div>
+                <div class="gen-buttons">
+                    <label for="portrait-style" class="section-title">ACABAMENTO DO RETRATO</label>
+                    <select id="portrait-style" class="cyber-select">
+                        <option value="misuki-natural" selected>Misuki natural · sombras e mechas curvas</option>
+                        <option value="ibis">Anime cel-shading · style Ibis Paint X</option>
+                        <option value="stroke">Ilustração em fiapos · estilo studio</option>
+                        <option value="natural">Retrato natural · luz de janela</option>
+                        <option value="color">Retrato gótico por massas de cor</option>
+                        <option value="ink">Line art monocromática</option>
+                    </select>
+                    <label for="portrait-quality">Qualidade da Misuki natural</label>
+                    <select id="portrait-quality" class="cyber-select">
+                        <option value="standard" selected>Detalhada · 900 × 1200</option>
+                        <option value="economy">Leve · 720 × 960</option>
+                    </select>
+                    <label for="portrait-expression">Expressão da Misuki natural</label>
+                    <select id="portrait-expression" class="cyber-select">
+                        <option value="neutral">Neutra</option><option value="soft" selected>Sorriso suave</option>
+                        <option value="happy">Alegre</option><option value="sad">Triste</option>
+                        <option value="angry">Irritada</option><option value="surprised">Surpresa</option>
+                    </select>
+                    <label for="portrait-material">Tecido da Misuki natural</label>
+                    <select id="portrait-material" class="cyber-select">
+                        <option value="velvet">Veludo</option><option value="satin">Cetim</option>
+                    </select>
+                    <button id="btn-gen-pro" class="btn-gen accent">👩 Gerar personagem local</button>
+                    <label for="misuki-pose" class="section-title">MISUKI · BLACKCORE</label>
+                    <select id="misuki-pose" class="cyber-select">
+                        <option value="front" selected>Frente</option>
+                        <option value="three-quarter">Três quartos</option>
+                        <option value="profile">Perfil</option>
+                        <option value="smile">Sorriso leve</option>
+                        <option value="full">Corpo inteiro</option>
+                    </select>
+                    <button id="btn-misuki-axes" class="btn-gen">⌖ Eixos da Misuki no canvas</button>
+                    <button id="btn-misuki-generate" class="btn-gen accent">🖤 Gerar Misuki (BlackCore)</button>
+                    <small id="misuki-status" class="vision-status">O retrato natural é local e frontal. Outras poses dependem do plano do BlackCore.</small>
+                    <button id="btn-gen-city" class="btn-gen">🌆 Cyber City</button>
+                    <button id="btn-gen-neural" class="btn-gen">🧠 Neural Net</button>
+                    <button id="btn-gen-fractal" class="btn-gen">🌀 Fractal Neon</button>
+                    <button id="btn-gen-matrix" class="btn-gen">💚 Matrix Rain Full</button>
+                    <button id="btn-study-shrine" class="btn-gen">🌙 Pintar santuário</button>
+                    <button id="btn-study-city" class="btn-gen">🏙️ Pintar avenida neon</button>
+                    <button id="btn-study-cathedral" class="btn-gen">🕯️ Pintar catedral</button>
+                    <button id="btn-study-house" class="btn-gen">🏡 Pintar casa no jardim</button>
+                    <button id="btn-study-fruit" class="btn-gen">🍎 Pintar frutas</button>
+                </div>
+
+                <div class="section-title">CRIAR A PARTIR DE REFERÊNCIA · GEMINI VISION</div>
+                <div class="control-group">
+                    <label for="vision-model">Modelo Google</label>
+                    <input id="vision-model" class="cyber-select" placeholder="Padrão configurado no BlackCore" maxlength="100">
+
+                </div>
+                <div class="control-group">
+                    <label for="vision-style">Técnica da nova pintura</label>
+                    <select id="vision-style" class="cyber-select">
+                        <option value="oil">Óleo com pinceladas visíveis</option>
+                        <option value="watercolor">Aquarela em camadas</option>
+                        <option value="gouache">Guache detalhado</option>
+                        <option value="anime-ink">Anime com lineart orgânica</option>
+                    </select>
+                </div>
+                <div class="control-group">
+                    <label for="vision-direction">O que preservar ou mudar (opcional)</label>
+                    <textarea id="vision-direction" class="cyber-select" rows="3" maxlength="500" placeholder="Ex.: mantenha o cabelo e a roupa; fundo de catedral, luz vermelha e acabamento a óleo."></textarea>
+                </div>
+                <button id="btn-vision-paint" class="btn-gen accent" disabled>👁️ Analisar e criar nova pintura</button>
+                <small id="vision-status" class="vision-status">Abra uma referência; a conexão usa o BlackCore instalado neste aparelho.</small>
+                <small class="vision-status">A análise passa pelo provider Google do BlackCore, usando os modelos e o rodízio de chaves já configurados. A imagem final é desenhada do zero; a chamada pode consumir sua cota.</small>
+
+
+                <div class="section-title">CAMADAS · IBIS PAINT X STYLE</div>
+                <div class="control-group">
+                    <label for="layer-select">Camada Ativa:</label>
+                    <select id="layer-select" class="cyber-select"></select>
+                </div>
+                <div class="gen-buttons">
+                    <button id="btn-layer-add" class="btn-gen accent">➕ Nova Camada</button>
+                    <button id="btn-layer-duplicate" class="btn-gen">📋 Duplicar</button>
+                    <button id="btn-layer-up" class="btn-gen">⬆ Subir</button>
+                    <button id="btn-layer-down" class="btn-gen">⬇ Descender</button>
+                    <button id="btn-layer-delete" class="btn-gen danger">🗑 Excluir Camada</button>
+                </div>
+                <div class="control-group">
+                    <label for="layer-blend">Modo de Mesclagem (Blend):</label>
+                    <select id="layer-blend" class="cyber-select">
+                        <option value="source-over" selected>Normal</option>
+                        <option value="multiply">Multiplicação (Multiply)</option>
+                        <option value="screen">Tela / Adição Glow (Screen)</option>
+                        <option value="overlay">Sobrepor (Overlay)</option>
+                        <option value="color-dodge">Color Dodge (Brilho Intenso)</option>
+                        <option value="darken">Escurecer (Darken)</option>
+                        <option value="lighten">Clarear (Lighten)</option>
+                        <option value="soft-light">Luz Suave (Soft Light)</option>
+                    </select>
+                </div>
+                <div class="control-group">
+                    <label for="layer-opacity">Opacidade da Camada: <span id="layer-opacity-val">100%</span></label>
+                    <input type="range" id="layer-opacity" min="0" max="100" value="100">
+                </div>
+                <div class="control-group checkboxes">
+                    <button id="btn-layer-clipping" class="btn-pill">✂ Clipping Mask (OFF)</button>
+                    <button id="btn-layer-alpha-lock" class="btn-pill">🔒 Alpha Lock (OFF)</button>
+                    <button id="btn-layer-toggle-vis" class="btn-pill">👁️ Visível (ON)</button>
+                </div>
+
+                <div class="section-title">RÉGUAS · IBIS STYLE</div>
+                <div class="control-group">
+                    <label for="ruler-type">Tipo de Régua:</label>
+                    <select id="ruler-type" class="cyber-select">
+                        <option value="none" selected>Desativada</option>
+                        <option value="straight">Régua Direta (Linha Reta)</option>
+                        <option value="circular">Régua Circular / Círculo</option>
+                        <option value="symmetry">Régua de Simetria (Eixos)</option>
+                    </select>
+                </div>
+
+                <div class="section-title">TRAÇO & SIMETRIA</div>
+                <div class="control-group">
+                    <label for="brush-material">Material do pincel</label>
+                    <select id="brush-material" class="cyber-select">
+                        <option value="gpen" selected>G-Pen / Mapeamento · Anime Ibis</option>
+                        <option value="dip-pen-hard">Caneta Tinta Dura · Lineart</option>
+                        <option value="dip-pen-soft">Caneta Tinta Macia · Sombras</option>
+                        <option value="felt-tip">Caneta Feltro · Preenchimento</option>
+                        <option value="airbrush-trapezoid">Aerógrafo Trapezoidal · Degradê Ibis</option>
+                        <option value="watercolor-mix">Aquarela Mista · Fusão Ibis</option>
+                        <option value="pencil-graphite">Lápis Grafite · Esboço Ibis</option>
+                        <option value="oil">Óleo clássico · cerdas</option>
+                        <option value="oil-dry">Óleo seco · pincel quase sem tinta</option>
+                        <option value="impasto">Óleo impasto · tinta espessa</option>
+                        <option value="watercolor">Aquarela · lavagens transparentes</option>
+                        <option value="gouache">Guache · fosco e opaco</option>
+                        <option value="acrylic">Acrílica · cobertura forte</option>
+                        <option value="pastel">Pastel · pigmento granulado</option>
+                        <option value="charcoal">Carvão · textura irregular</option>
+                        <option value="pencil">Lápis · grafite</option>
+                        <option value="ink">Tinta · linha limpa</option>
+                        <option value="marker">Marcador · faixa uniforme</option>
+                        <option value="airbrush">Aerógrafo · degradê macio</option>
+                        <option value="smudge">Mistura · puxa a cor da tela</option>
+                        <option value="round">Redondo · básico</option>
+                    </select>
+                </div>
+                <div class="control-group">
+                    <label for="taper-size">Conicidade / Tapering (Afilamento): <span id="taper-val">50%</span></label>
+                    <input type="range" id="taper-size" min="0" max="100" value="50">
+                </div>
+                <div class="control-group">
+                    <label for="stabilizer">Estabilização: <span id="stabilizer-val">0</span></label>
+                    <input type="range" id="stabilizer" min="0" max="20" value="0">
+                </div>
+                <div class="control-group">
+                    <label for="brush-opacity">Opacidade: <span id="opacity-val">100%</span></label>
+                    <input type="range" id="brush-opacity" min="5" max="100" value="100">
+                </div>
+                <div class="control-group">
+                    <label for="symmetry-count">Eixos da simetria</label>
+                    <select id="symmetry-count" class="cyber-select">
+                        <option value="2">2 eixos</option><option value="4">4 eixos</option>
+                        <option value="6">6 eixos</option><option value="8" selected>8 eixos</option>
+                        <option value="12">12 eixos</option>
+                    </select>
+                </div>
+
+                <div class="section-title">TAMANHO & BRILHO</div>
+                <div class="control-group">
+                    <label for="brush-size">Tamanho: <span id="size-val">8px</span></label>
+                    <input type="range" id="brush-size" min="1" max="80" value="8">
+                </div>
+                <div class="control-group">
+                    <label for="glow-size">Brilho Neon: <span id="glow-val">15</span></label>
+                    <input type="range" id="glow-size" min="0" max="50" value="15">
+                </div>
+
+                <div class="section-title">CORES CYBER</div>
+                <div class="color-palette" id="quick-colors">
+                    <button class="color-swatch active" style="background:#00ffcc" data-color="#00ffcc"></button>
+                    <button class="color-swatch" style="background:#ff007f" data-color="#ff007f"></button>
+                    <button class="color-swatch" style="background:#9d00ff" data-color="#9d00ff"></button>
+                    <button class="color-swatch" style="background:#00f0ff" data-color="#00f0ff"></button>
+                    <button class="color-swatch" style="background:#ffff00" data-color="#ffff00"></button>
+                    <button class="color-swatch" style="background:#ff3300" data-color="#ff3300"></button>
+                    <button class="color-swatch" style="background:#ffffff" data-color="#ffffff"></button>
+                    <button class="color-swatch" style="background:#0a0a12" data-color="#0a0a12"></button>
+                </div>
+                <div class="custom-color-picker">
+                    <label for="color-picker">Cor Personalizada:</label>
+                    <input type="color" id="color-picker" value="#00ffcc">
+                </div>
+            </aside>
+
+            <!-- Center Canvas Area -->
+            <section class="canvas-container">
+                <div class="canvas-wrapper" id="canvas-wrapper">
+                    <img id="ref-ghost" alt="" hidden>
+                    <canvas id="paint-canvas"></canvas>
+                    <canvas id="overlay-canvas"></canvas>
+                </div>
+                <div class="view-hint" id="zoom-readout">100%</div>
+            </section>
+        </main>
+
+        <!-- Bottom Bar -->
+        <footer class="bottom-bar">
+            <div class="status-item"><span class="dot"></span> Black Paint Online</div>
+            <div class="status-item" id="coords-display">X: 0, Y: 0</div>
+            <div class="status-item" id="res-display">1024 x 1024</div>
+            <div class="status-item"><span id="active-tool-display">FERRAMENTA: Pincel</span></div>
+            <div class="status-item" id="gpu-display">GPU: …</div>
+        </footer>
+
+        <!-- Modal de Notificação / Black Numbers Export -->
+        <div id="modal" class="modal hidden">
+            <div class="modal-content">
+                <h3 id="modal-title">⚡ Black Numbers Vision Feed</h3>
+                <div id="modal-body"></div>
+                <div class="modal-actions">
+                    <button id="modal-close" class="btn-pill">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="brushes.js"></script>
+    <script src="filters.js"></script>
+    <script src="gpu.js"></script>
+    <script src="misuki.js"></script>
+    <script src="project_io.js"></script>
+    <script src="app.js"></script>
+    <script src="academy-data.js"></script>
+    <script src="academy-guides.js"></script>
+    <script src="academy.js"></script>
+</body>
+</html>

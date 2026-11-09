@@ -1,0 +1,2 @@
+# Apenas enhance_eyes_neural.py. No Termux: pkg install python-numpy
+numpy>=1.26,<3

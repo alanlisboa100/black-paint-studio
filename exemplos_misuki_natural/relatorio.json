@@ -1,0 +1,49 @@
+{
+  "engine": "procedural-natural-portrait",
+  "engine_version": "2.3.0",
+  "dimensions": [
+    900,
+    1200
+  ],
+  "seed": 7331,
+  "quality": "standard",
+  "background": "paper",
+  "hair_fibers": 1750,
+  "stages": [
+    "base_e_silhueta",
+    "rosto_e_volume",
+    "olhos_e_expressao",
+    "mechas_e_roupa",
+    "acabamento"
+  ],
+  "reference_pixels_used": false,
+  "pose": "front",
+  "controls": {
+    "eye_open": 0.9,
+    "eye_width": 1.02,
+    "eye_tilt": 0,
+    "iris_size": 1.02,
+    "pupil_size": 0.25,
+    "gaze_x": 0,
+    "gaze_y": 0,
+    "mouth_width": 1.05,
+    "mouth_curve": 0.45,
+    "mouth_open": 0,
+    "lip_fullness": 1.05,
+    "brow_tilt": 0.08,
+    "hair_shine": 1.12,
+    "hair_wave": 1.25,
+    "cloth_fold": 1.1,
+    "expression": "soft",
+    "cloth_material": "velvet"
+  },
+  "semantic_fidelity_score": null,
+  "seconds_render_checkpoints_and_save": 2.985,
+  "execution_environment": {
+    "system": "Linux",
+    "machine": "x86_64",
+    "python": "3.12.14"
+  },
+  "peak_process_rss_mib": 56.8,
+  "measurement_scope": "Este processo Python; não inclui editor/navegador nem julga qualidade artística."
+}

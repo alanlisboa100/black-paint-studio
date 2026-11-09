@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLACKCORE // Live Learning & Training Neural Engine</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Courier New', Courier, monospace; }
+        body, html { width: 100%; height: 100%; overflow: hidden; background: #030508; color: #00ffcc; }
+        
+        #container { display: flex; width: 100%; height: 100%; }
+        
+        /* Painel Esquerdo: Terminal de Código & Absorção de Cursos */
+        #terminal-panel {
+            width: 50%; height: 100%; background: rgba(5, 8, 15, 0.95); border-right: 2px solid #00ffcc33;
+            padding: 20px; display: flex; flex-direction: column; justify-content: space-between; overflow-y: auto;
+            box-shadow: 10px 0 30px rgba(0,0,0,0.8);
+        }
+        
+        h2 { font-size: 16px; color: #fff; margin-bottom: 10px; border-bottom: 1px solid #00ffcc44; padding-bottom: 6px; display: flex; justify-content: space-between; align-items: center; }
+        .status-dot { width: 10px; height: 10px; background: #00ffcc; border-radius: 50%; box-shadow: 0 0 10px #00ffcc; animation: pulse 1.5s infinite; }
+        @keyframes pulse { 0% { opacity: 0.3; } 50% { opacity: 1; } 100% { opacity: 0.3; } }
+
+        #code-stream {
+            flex-grow: 1; background: rgba(0,0,0,0.6); border: 1px solid #00ffcc22; border-radius: 6px;
+            padding: 12px; font-size: 12px; color: #34d399; overflow-y: auto; white-space: pre-wrap; line-height: 1.4;
+            margin-bottom: 15px;
+        }
+
+        /* Painel Direito: Animação Visual & Renderizador em Tempo Real */
+        #visual-panel {
+            width: 50%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;
+            background: #020406; position: relative;
+        }
+        canvas { width: 90%; height: 85%; border: 2px solid #00ffcc44; border-radius: 12px; box-shadow: 0 0 40px rgba(0,255,204,0.15); background: #010204; }
+
+        .metrics { display: flex; gap: 15px; font-size: 11px; color: #94a3b8; margin-top: 10px; }
+        .metric-val { color: #00ffcc; font-weight: bold; }
+        
+        .btn-control {
+            background: linear-gradient(135deg, #00ffcc, #008855); border: none; color: #030508; padding: 10px 20px;
+            font-size: 12px; font-weight: bold; border-radius: 6px; cursor: pointer; box-shadow: 0 0 15px rgba(0,255,204,0.4);
+            transition: transform 0.1s;
+        }
+        .btn-control:active { transform: scale(0.96); }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <!-- Terminal & Cursos -->
+        <div id="terminal-panel">
+            <div>
+                <h2>
+                    <span>🧠 MÓDULO DE APRENDIZADO EM TEMPO REAL</span>
+                    <div class="status-dot"></div>
+                </h2>
+                <p style="font-size: 11px; color: #64748b; margin-bottom: 12px;">Lendo e absorvendo conceitos dos cursos: Loomis (Anatomia), Ctrl+Paint (Valores & Óleo) & Proko (Gesture).</p>
+                <div id="code-stream">Inicializando kernel de treino BLACKCORE...</div>
+            </div>
+            
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <div class="metrics">
+                    <div>Fase: <span class="metric-val" id="m-phase">Absorção de Teoria</span></div>
+                    <div>Ciclo: <span class="metric-val" id="m-epoch">001</span></div>
+                    <div>Precisão: <span class="metric-val" id="m-acc">98.4%</span></div>
+                </div>
+                <button class="btn-control" onclick="resetTraining()">REINICIAR TREINO</button>
+            </div>
+        </div>
+
+        <!-- Canvas de Animação Visual -->
+        <div id="visual-panel">
+            <h2 style="position: absolute; top: 15px; left: 20px; border: none; color: #fff; font-size: 14px;">🎨 RENDERIZADOR DO ESTÚDIO AO VIVO</h2>
+            <canvas id="paint-canvas"></canvas>
+        </div>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('paint-canvas');
+        const ctx = canvas.getContext('2d');
+        const codeStream = document.getElementById('code-stream');
+        
+        function resizeCanvas() {
+            canvas.width = canvas.parentElement.clientWidth * 0.9;
+            canvas.height = canvas.parentElement.clientHeight * 0.85;
+        }
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        const trainingLogs = [
+            "[CURSO: LOOMIS] Analisando proporção de 7.5 cabeças e esqueleto base...",
+            "[CURSO: CTRL+PAINT] Mapeando valores tonais (Value Study) - Escala de cinza primária...",
+            "[CURSO: PROKO] Calculando linha de ação (Gesture Line) para movimento orgânico...",
+            "[MOTOR ÓLEO] Aplicando camadas de impasto translúcido e cerdas macias...",
+            "[LUZ & SOMBRA] Posicionando Key Light e Rim Light ciano/violeta...",
+            "[AUTO-SCAN] Verificando ausência de geometria rígida. Score de organicidade: 100%...",
+            "[TREINO] Sintetizando hachuras de lápis profissional e texturas de linho...",
+            "[SUCESSO] Módulo de aprendizado neural convergido com excelência total!"
+        ];
+
+        let logIndex = 0;
+        function streamLogs() {
+            if (logIndex < trainingLogs.length) {
+                codeStream.textContent += "\n> " + trainingLogs[logIndex];
+                codeStream.scrollTop = codeStream.scrollHeight;
+                document.getElementById('m-phase').textContent = `Fase 0${logIndex + 1}`;
+                document.getElementById('m-epoch').textContent = `00${logIndex + 1}`;
+                logIndex++;
+                setTimeout(streamLogs, 1500);
+            }
+        }
+        setTimeout(streamLogs, 800);
+
+        function resetTraining() {
+            logIndex = 0;
+            codeStream.textContent = "Reiniciando kernel de treino BLACKCORE...";
+            streamLogs();
+        }
+
+        // Animação Visual Orgânica no Canvas
+        let step = 0;
+        function drawLiveArt() {
+            ctx.fillStyle = "rgba(3, 5, 8, 0.15)";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            const cx = canvas.width / 2;
+            const cy = canvas.height / 2;
+
+            // Desenhar linhas de gesto orgânicas e pinceladas dinâmicas
+            ctx.save();
+            ctx.translate(cx, cy);
+
+            // Círculos e curvas de absorção neural
+            for (let i = 0; i < 5; i++) {
+                ctx.beginPath();
+                let radius = 80 + i * 40 + Math.sin(step * 0.05 + i) * 20;
+                ctx.arc(0, 0, radius, 0, Math.PI * 2);
+                ctx.strokeStyle = `rgba(0, 255, 204, ${0.15 + i * 0.05})`;
+                ctx.lineWidth = 2;
+                ctx.stroke();
+            }
+
+            // Pinceladas a óleo orbitais simulando treino neural
+            for (let j = 0; j < 12; j++) {
+                let angle = step * 0.02 + (j * Math.PI / 6);
+                let bx = Math.cos(angle) * (120 + Math.sin(step * 0.03) * 40);
+                let by = Math.sin(angle) * (80 + Math.cos(step * 0.03) * 30);
+                
+                ctx.beginPath();
+                ctx.arc(bx, by, 12, 0, Math.PI * 2);
+                ctx.fillStyle = j % 2 === 0 ? "rgba(130, 50, 220, 0.6)" : "rgba(0, 230, 255, 0.6)";
+                ctx.fill();
+            }
+
+            ctx.restore();
+            step++;
+            requestAnimationFrame(drawLiveArt);
+        }
+        drawLiveArt();
+    </script>
+</body>
+</html>

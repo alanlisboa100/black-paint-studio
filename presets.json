@@ -1,0 +1,90 @@
+{
+  "version": "0.6",
+  "system": "Black Core / paint-IA-Studio-Pro v0.6 Professional",
+  "presets": {
+    "soft_sketch_base": {
+      "preset_name": "soft_sketch_base",
+      "code": "A",
+      "label": "Versão A — Soft Sketch Base",
+      "description": "Ponto de partida leve, traço irregular fino/médio, cores claras e pastel.",
+      "line_weight": "0.45",
+      "line_jitter": "medium",
+      "hair_complexity": "light",
+      "texture_mode": "dry_brush_light",
+      "palette": "pink_lilac_soft",
+      "shadow_intensity": "low",
+      "ui_frame": false,
+      "finish_level": "draft"
+    },
+    "paint_retro_interface": {
+      "preset_name": "paint_retro_interface",
+      "code": "B",
+      "label": "Versão B — Paint Retro Interface",
+      "description": "A arte é apresentada dentro de uma moldura de interface Paint Retrô com barra de ferramentas, paleta inferior, doodles e estrelinhas.",
+      "line_weight": "0.55",
+      "line_jitter": "medium_high",
+      "hair_complexity": "medium",
+      "texture_mode": "pixel_sketch_classic",
+      "palette": "retro_paint_90s",
+      "shadow_intensity": "medium",
+      "ui_frame": true,
+      "finish_level": "retro_ui"
+    },
+    "soft_render_delicado": {
+      "preset_name": "soft_render_delicado",
+      "code": "C",
+      "label": "Versão C — Soft Render Delicado",
+      "description": "Estética anime humana e refinada, olhos detalhados com brilho suave, cabelo em camadas e blush granulado.",
+      "line_weight": "0.50",
+      "line_jitter": "low_medium",
+      "hair_complexity": "high",
+      "texture_mode": "soft_grain_blend",
+      "palette": "pastel_skin_soft",
+      "shadow_intensity": "medium",
+      "ui_frame": false,
+      "finish_level": "soft_render"
+    },
+    "gothic_pastel_fusion": {
+      "preset_name": "gothic_pastel_fusion",
+      "code": "D",
+      "label": "Versão D — Gothic Pastel Fusion",
+      "description": "Fusão entre a delicadeza pastel e a identidade sombria do Black Core (pele clara, cabelo preto/azul, olhos vermelhos e roupa vinho/gótica).",
+      "line_weight": "0.60",
+      "line_jitter": "medium",
+      "hair_complexity": "high",
+      "texture_mode": "gothic_velvet_grain",
+      "palette": "blackcore_gothic_pastel",
+      "shadow_intensity": "high",
+      "ui_frame": false,
+      "finish_level": "gothic_fusion"
+    },
+    "production_polish_light": {
+      "preset_name": "production_polish_light",
+      "code": "E",
+      "label": "Versão E — Production Polish Light",
+      "description": "Acabamento pronto para publicação em posts/apresentações, com contraste seletivo, nitidez e leve glow mantendo a textura manual.",
+      "line_weight": "0.50",
+      "line_jitter": "low",
+      "hair_complexity": "high",
+      "texture_mode": "polished_clean_sketch",
+      "palette": "vibrant_studio_pro",
+      "shadow_intensity": "medium_high",
+      "ui_frame": false,
+      "finish_level": "polished_light"
+    },
+    "v06_pro_oil_painting": {
+      "preset_name": "v06_pro_oil_painting",
+      "code": "F",
+      "label": "Versão F — v0.6 Professional Oil & Organic",
+      "description": "Motor profissional v0.6 com física de cerdas de óleo, textura de tela (canvas grain), ruído fractal procedural e iluminação volumétrica.",
+      "line_weight": "0.75",
+      "line_jitter": "organic_bristle",
+      "hair_complexity": "maximum",
+      "texture_mode": "linen_canvas_impasto",
+      "palette": "pro_volumetric_oil",
+      "shadow_intensity": "maximum",
+      "ui_frame": false,
+      "finish_level": "v06_masterpiece"
+    }
+  }
+}
